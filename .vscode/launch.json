@@ -5,9 +5,18 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"type": "pwa-node",
+			"request": "launch",
+			"name": "node.js 디버깅",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${file}"
+		},
+		{
 			"type": "pwa-chrome",
 			"request": "launch",
-			"name": "Launch Chrome against localhost",
+			"name": "크롬 디버깅",
 			"url": "http://localhost:5500/${relativeFile}",
 			"webRoot": "${workspaceFolder}"
 		}
